@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Чат</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main class="chat-main">
+      <div class="chat-main__inner">
+        <div class="chat-main__header">
+            <a href="/chat/index.html" class="chat-main__back"></a>
+            <p></p>
+        </div>
+        <div class="chat-main__messages">
+        </div>
+      </div>
+    </main>
+    <footer class="chat-footer">
+        <form class="chat-footer__add-message">
+            <input type="text" name="text" placeholder="Type message..." autocomplete="off"/>
+            <button type="submit"></button>
+        </form>
+    </footer>
+
+    <template>
+      <article class="chat-main__message">
+        <img src="/chat/img/ava.png" class="chat-main__avatar">
+        <p class="chat-main__time"></p>        
+        <p class="chat-main__text">Сообщение</p>
+        <p class="chat-main__author"></p>
+      </article>
+    </template>
+
+    <script src="js/chat.js"></script>
+  </body>
+</html>
